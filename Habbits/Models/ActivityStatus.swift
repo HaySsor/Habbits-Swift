@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+
+enum ActivityStatus : String,Codable, CaseIterable {
+    case pending
+    case done
+    
+    var label :String {
+        switch self {
+        case .done: return "Done"
+        case .pending: return "Paused"
+        }
+    }
+}

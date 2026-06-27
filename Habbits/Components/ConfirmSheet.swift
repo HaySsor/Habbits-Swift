@@ -45,9 +45,14 @@ struct ConfirmSheet: View {
                         toggleSheet()
                     }
                 )
+                
+                Button("Cancel") {
+                    toggleSheet()
+                }.padding(.top, 20)
+                    .buttonStyle(.plain)
             }
         }
-        .padding()
+        .padding(.horizontal, 20)
     }
 }
 
